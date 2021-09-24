@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const Result(),
+      home:  const Result(result: 22,isMale: true,age: 22,),
     );
   }
 }
