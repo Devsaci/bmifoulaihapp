@@ -36,7 +36,7 @@ class Result extends StatelessWidget {
               ),
             ),
             Text(
-              "Result :   ${result.toStringAsFixed(4)}",
+              "Healhiness :   ${Healhiness  Text With Conditions}",
               style: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
