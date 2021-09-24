@@ -27,6 +27,12 @@ class Result extends StatelessWidget {
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
               ),
+            )Text(
+              "Gender :   ${isMale ? 'Male' : 'Female'}",
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
             )
           ],
         ),
