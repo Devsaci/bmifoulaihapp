@@ -19,25 +19,32 @@ class Result extends StatelessWidget {
       ),
       body: SafeArea(
           child: Center(
-            child: Column(
-              children: <Widget>[
-                Text(
-                  "Gender :   ${isMale ? 'Male' : 'Female'}",
-                  style: const TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  "Result :   ${result.toStringAsFixed(4)}",
-                  style: const TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
-                )
-              ],
+        child: Column(
+          children: <Widget>[
+            Text(
+              "Gender :   ${isMale ? 'Male' : 'Female'}",
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          )),
+            Text(
+              "Result :   ${result.toStringAsFixed(4)}",
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              "Result :   ${result.toStringAsFixed(4)}",
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      )),
     );
   }
 }
