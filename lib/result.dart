@@ -8,6 +8,13 @@ class Result extends StatelessWidget {
   final bool isMale;
   final int age;
 
+  String get resultPhrase{
+    String resultText = '';
+
+    return resultText;
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +43,7 @@ class Result extends StatelessWidget {
               ),
             ),
             Text(
-              "Healhiness :   ${Healhiness  Text With Conditions}",
+              "Healhiness :   ${result.toStringAsFixed(4)}",
               style: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
