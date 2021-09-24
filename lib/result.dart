@@ -54,6 +54,13 @@ class Result extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Text(
+              "age :   $age",
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       )),
