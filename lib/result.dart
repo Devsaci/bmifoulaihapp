@@ -21,7 +21,7 @@ class Result extends StatelessWidget {
           child: Center(
         child: Column(
           children: const <Widget>[
-            Text("Gender :   ${isMale? 'Male'}" )
+            Text("Gender :   ${isMale? 'Male':'Female'}" )
 
           ],
         ),
