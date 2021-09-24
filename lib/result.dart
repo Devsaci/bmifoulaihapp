@@ -12,7 +12,7 @@ class Result extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text("Result", style: TextStyle(fontSize: 25),),
         ),
-        body: ,
+        body: SafeArea(child: child),
        
     );
   }
