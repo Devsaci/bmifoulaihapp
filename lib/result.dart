@@ -29,7 +29,7 @@ class Result extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Result :   ${result.toDouble()}",
+                  "Result :   ${result.toStringAsFixed(4)}",
                   style: const TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
