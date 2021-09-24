@@ -48,7 +48,7 @@ class Result extends StatelessWidget {
               ),
             ),
             Text(
-              "Healhiness :   ${result.toStringAsFixed(4)}",
+              "Healhiness :   $resultPhrase",
               style: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
