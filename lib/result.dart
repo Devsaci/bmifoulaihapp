@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   const Result({Key? key}) : super(key: key);
+final double result;
+final bool isMale;
+final int age;
+
+
+
 
   @override
   Widget build(BuildContext context) {
