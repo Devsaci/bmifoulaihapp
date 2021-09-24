@@ -10,6 +10,11 @@ class Result extends StatelessWidget {
 
   String get resultPhrase{
     String resultText = '';
+    //Conditions Parameters
+    if(result >= 30)  resultText = 'Obese';
+    else if(result >= 30)  resultText = 'Obese';
+    else if(result > 25 && result < 30)  resultText = 'Overweight';
+    else  resultText = 'Thin';
 
     return resultText;
   }
