@@ -12,7 +12,16 @@ class Result extends StatelessWidget {
           style: TextStyle(fontSize: 25),
         ),
       ),
-      body: SafeArea(child: Center()),
+      body: SafeArea(
+          child: Center(
+        child: Column(
+            children:  <Widget>[
+
+
+            ],
+
+        ),
+      )),
     );
   }
 }
