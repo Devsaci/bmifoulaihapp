@@ -29,7 +29,7 @@ class Result extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Result :   $result",
+                  "Result :   ${}",
                   style: const TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
