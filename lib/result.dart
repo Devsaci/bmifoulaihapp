@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
-  const Result({Key? key}) : super(key: key);
+  const Result({Key? key, this.result, required this.isMale, this.age}) : super(key: key);
 final double result;
 final bool isMale;
 final int age;
