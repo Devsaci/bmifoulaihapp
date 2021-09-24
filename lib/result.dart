@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
@@ -10,10 +6,13 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("Result", style: TextStyle(fontSize: 25),),
+      appBar: AppBar(
+        title: const Text(
+          "Result",
+          style: TextStyle(fontSize: 25),
         ),
-        body: SafeArea(child: child),
-       
+      ),
+      body: SafeArea(child: Center()),
     );
   }
 }
