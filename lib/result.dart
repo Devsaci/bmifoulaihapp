@@ -20,7 +20,7 @@ class Result extends StatelessWidget {
       body: SafeArea(
           child: Center(
         child: Column(
-          children: const <Widget>[Text("Male")],
+          children: const <Widget>[Text("Gender :   ${}" )],
         ),
       )),
     );
