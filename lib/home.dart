@@ -19,15 +19,23 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Expanded(
             child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.blueGrey,
+                ),
                 child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(Icons.male),
-                    const SizedBox(height: 15 ,),
-                    Text('Male',style: Theme.of(context).textTheme.headline2,)
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      'Male',
+                      style: Theme.of(context).textTheme.headline2,
+                    )
                   ],
-                )
-            ),
+                )),
           ),
         ),
       ),
