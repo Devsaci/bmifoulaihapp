@@ -8,17 +8,20 @@ class Result extends StatelessWidget {
   final bool isMale;
   final int age;
 
-  String get resultPhrase{
+  String get resultPhrase {
     String resultText = '';
     //Conditions Parameters
-    if(result >= 30)  resultText = 'Obese';
-    else if(result >= 30)  resultText = 'Obese';
-    else if(result > 25 && result < 30)  resultText = 'Overweight';
-    else  resultText = 'Thin';
+    if (result >= 30)
+      resultText = 'Obese';
+    else if (result >= 30)
+      resultText = 'Obese';
+    else if (result > 25 && result < 30)
+      resultText = 'Overweight';
+    else
+      resultText = 'Thin';
 
     return resultText;
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -32,25 +35,18 @@ class Result extends StatelessWidget {
       body: SafeArea(
           child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly ,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Text(
-              "Gender :   ${isMale ? 'Male' : 'Female'}",
-              style: Theme.of(context).textTheme.headline2
-            ),
-            Text(
-              "Result :   ${result.toStringAsFixed(4)}",
-                style: Theme.of(context).textTheme.headline2
-            ),
+            Text("Gender :   ${isMale ? 'Male' : 'Female'}",
+                style: Theme.of(context).textTheme.headline2),
+            Text("Result :   ${result.toStringAsFixed(4)}",
+                style: Theme.of(context).textTheme.headline2),
             Text(
               "Healhiness :   $resultPhrase",
-                style: Theme.of(context).textTheme.headline2,
-                textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline2,
+              textAlign: TextAlign.center,
             ),
-            Text(
-              "age :   $age",
-                style: Theme.of(context).textTheme.headline2
-            ),
+            Text("age :   $age", style: Theme.of(context).textTheme.headline2),
           ],
         ),
       )),

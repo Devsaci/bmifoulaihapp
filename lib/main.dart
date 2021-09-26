@@ -15,16 +15,17 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         textTheme: const TextTheme(
-            headline2:TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-                color: Colors.white
-            ),
+          headline2: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         canvasColor: Colors.black,
         primarySwatch: Colors.teal,
       ),
-      home:  const Result(result: 20.231245,isMale: true,age: 22,),
+      home: const Result(
+        result: 20.231245,
+        isMale: true,
+        age: 22,
+      ),
     );
   }
 }
