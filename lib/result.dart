@@ -44,7 +44,8 @@ class Result extends StatelessWidget {
             ),
             Text(
               "Healhiness :   $resultPhrase",
-                style: Theme.of(context).textTheme.headline2
+                style: Theme.of(context).textTheme.headline2,
+                textAlign: TextAlign.center,
             ),
             Text(
               "age :   $age",
