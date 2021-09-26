@@ -1,4 +1,4 @@
-import 'dart:ui';
+
 
 import 'package:flutter/material.dart';
 
@@ -19,12 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              Text("Home Page",style: TextStyle(color: Colors.yellow,fontSize: 30),)
-            ],
-          ),
+         child: Expanded(child: Container()),
         ),
       ),
     );
