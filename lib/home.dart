@@ -20,6 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Expanded(
             child: Container(
                 child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(Icons.male),
                     const SizedBox(height: 15 ,),
