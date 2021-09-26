@@ -21,8 +21,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
                 child: Column(
                   children: [
-                    Icon(Icons.male),
-                    SizedBox(height: 90 ,),
+                    const Icon(Icons.male),
+                    const SizedBox(height: 15 ,),
                     Text('Male',style: Theme.of(context).textTheme.headline2,)
                   ],
                 )
