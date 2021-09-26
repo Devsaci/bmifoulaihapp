@@ -20,16 +20,16 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Expanded(
             child: Container(
                 child: Column(
-                    children: [
-
-                    ],
+                  children: [
+                    Icon(Icons.male),
+                    SizedBox(height: 90 ,),
+                    Text('Male',style: Theme.of(context).textTheme.headline2,)
+                  ],
                 )
             ),
           ),
         ),
       ),
-    )
-    ,
     );
   }
 }
