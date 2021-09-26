@@ -40,24 +40,15 @@ class Result extends StatelessWidget {
             ),
             Text(
               "Result :   ${result.toStringAsFixed(4)}",
-              style: const TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+                style: Theme.of(context).textTheme.headline2
             ),
             Text(
               "Healhiness :   $resultPhrase",
-              style: const TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+                style: Theme.of(context).textTheme.headline2
             ),
             Text(
               "age :   $age",
-              style: const TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+                style: Theme.of(context).textTheme.headline2
             ),
           ],
         ),
