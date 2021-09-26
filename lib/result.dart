@@ -36,10 +36,7 @@ class Result extends StatelessWidget {
           children: <Widget>[
             Text(
               "Gender :   ${isMale ? 'Male' : 'Female'}",
-              style: const TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(context).textTheme.headline2
             ),
             Text(
               "Result :   ${result.toStringAsFixed(4)}",

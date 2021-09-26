@@ -14,6 +14,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        textTheme: const TextTheme(
+            headline2:TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+                color: Colors.black
+            ),
+        ),
+        // canvasColor: Colors.black,
         primarySwatch: Colors.teal,
       ),
       home:  const Result(result: 35.2568569,isMale: true,age: 22,),
