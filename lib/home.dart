@@ -20,12 +20,16 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Expanded(
             child: Container(
                 child: Column(
+                    children: [
 
-                ),
+                    ],
+                )
             ),
           ),
         ),
       ),
+    )
+    ,
     );
   }
 }
