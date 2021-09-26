@@ -28,9 +28,10 @@ class Result extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Result",
+          'Result',
           style: TextStyle(fontSize: 25),
         ),
+        centerTitle: true,
       ),
       body: SafeArea(
           child: Center(
