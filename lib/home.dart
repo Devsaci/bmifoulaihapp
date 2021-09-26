@@ -18,24 +18,28 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SafeArea(
         child: Center(
           child: Expanded(
-            child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+            child: GestureDetector(
+              onTap: () {
+
+              },
+              child: Container(
                   color: Colors.blueGrey,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.male),
-                    const SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      'Male',
-                      style: Theme.of(context).textTheme.headline2,
-                    )
-                  ],
-                )),
+                  // decoration: const BoxDecoration(
+                  //     borderRadius: BorderRadius.all(Radius.circular(20))),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.male),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        'Male',
+                        style: Theme.of(context).textTheme.headline2,
+                      )
+                    ],
+                  )),
+            ),
           ),
         ),
       ),
