@@ -8,7 +8,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool isMale = true;
+  bool isMale = false;
   double heightVal = 170;
 
   int weight = 55;
