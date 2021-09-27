@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: isMale ? Colors.teal : Colors.blueGrey,
+          color: (isMale && type == 'male') ? Colors.teal : Colors.blueGrey,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
