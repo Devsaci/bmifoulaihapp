@@ -25,11 +25,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Row(
             children: [
-              m1GestureDetector(context,'male'),
+              m1GestureDetector(context, 'male'),
               const SizedBox(
                 width: 50,
               ),
-              m1GestureDetector(context,'female'),
+              m1GestureDetector(context, 'female'),
             ],
           ),
         ),
@@ -39,22 +39,25 @@ class _MyHomePageState extends State<MyHomePage> {
 
   GestureDetector m1GestureDetector(BuildContext context, String type) {
     return GestureDetector(
-      onTap: () => setState(() => isMale = (type == 'male')? true :false),
+      onTap: () => setState(() => isMale = (type == 'male') ? true : false),
       child: Expanded(
           child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: (isMale && type == 'male') ? Colors.teal : Colors.blueGrey,
+          color: (isMale && type == 'male') || (!isMale && type == 'female') ? Colors.teal
+              : Colors.blueGrey,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-              Icon(type == 'male'? Icons.male : Icons.female,),
+            Icon(
+              type == 'male' ? Icons.male : Icons.female,
+            ),
             const SizedBox(
               height: 15,
             ),
             Text(
-              type == 'male'?'MALE':'FEMALE',
+              type == 'male' ? 'MALE' : 'FEMALE',
               style: Theme.of(context).textTheme.headline2,
             )
           ],
