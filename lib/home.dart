@@ -23,21 +23,20 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Center(
-          child: GestureDetector(
-            onTap: () {
-              setState(() {
-                isMale = true;
-              });
-            },
-            child: m1Expanded(context),
-          ),
+          child: m1GestureDetector(context),
         ),
       ),
     );
   }
 
-  Expanded m1Expanded(BuildContext context) {
-    return Expanded(
+  GestureDetector m1GestureDetector(BuildContext context) {
+    return GestureDetector(
+          onTap: () {
+            setState(() {
+              isMale = true;
+            });
+          },
+          child: Expanded(
               child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
@@ -57,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           )
-          );
+          ),
+        );
   }
 }
