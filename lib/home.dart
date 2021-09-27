@@ -23,7 +23,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Center(
-          child: m1GestureDetector(context),
+          child: Row(
+            children: [
+              m1GestureDetector(context),
+            ],
+          ),
         ),
       ),
     );
