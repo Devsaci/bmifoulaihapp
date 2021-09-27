@@ -8,7 +8,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool isMale = false;
+  bool isMale = true;
   double heightVal = 170;
 
   int weight = 55;
@@ -29,29 +29,34 @@ class _MyHomePageState extends State<MyHomePage> {
                 isMale = true;
               });
             },
-            child: Expanded(
-                child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: isMale? Colors.teal :Colors.blueGrey,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(Icons.male),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  Text(
-                    'MALE',
-                    style: Theme.of(context).textTheme.headline2,
-                  )
-                ],
-              ),
-            )),
+            child: m1Expanded(context),
           ),
         ),
       ),
     );
+  }
+
+  Expanded m1Expanded(BuildContext context) {
+    return Expanded(
+              child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: isMale? Colors.teal :Colors.blueGrey,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.male),
+                const SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  'MALE',
+                  style: Theme.of(context).textTheme.headline2,
+                )
+              ],
+            ),
+          )
+          );
   }
 }
