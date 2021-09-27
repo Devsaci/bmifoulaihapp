@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 15,
             ),
             Text(
-              'MALE',
+              type == 'male'?'MALE':'FEMALE',
               style: Theme.of(context).textTheme.headline2,
             )
           ],
