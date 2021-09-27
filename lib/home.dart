@@ -8,6 +8,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+bool isMale=true;
+double heightVal= 170 ;
+
+int weight = 55;
+int age =15;
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,13 +27,17 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: GestureDetector(
             onTap: () {
-              setState(() {});
+              setState(() {
+                isMale = true;
+
+
+              });
             },
             child: Expanded(
                 child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.blueGrey,
+                color: isMale? Colors.teal:Colors.blueGrey,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
