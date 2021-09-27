@@ -17,17 +17,30 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Center(
-          child: Column(
-            children: [
-              const Icon(Icons.male),
-              const SizedBox(
-                height: 15,
+          child: GestureDetector(
+            onTap: () {
+
+            },
+            child: Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.blueGrey,
               ),
-              Text(
-                'Male',
-                style: Theme.of(context).textTheme.headline2,
-              )
-            ],
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.male),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    'MALE',
+                    style: Theme.of(context).textTheme.headline2,
+                  )
+                ],
+              ),
+            )),
           ),
         ),
       ),
