@@ -8,13 +8,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-bool isMale=true;
-double heightVal= 170 ;
+  bool isMale = true;
+  double heightVal = 170;
 
-int weight = 55;
-int age =15;
-
-
+  int weight = 55;
+  int age = 15;
 
   @override
   Widget build(BuildContext context) {
@@ -29,15 +27,13 @@ int age =15;
             onTap: () {
               setState(() {
                 isMale = true;
-
-
               });
             },
             child: Expanded(
                 child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: isMale? Colors.teal:Colors.blueGrey,
+                color: isMale? Colors.teal :Colors.blueGrey,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
