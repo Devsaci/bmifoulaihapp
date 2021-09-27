@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: GestureDetector(
             onTap: () {
-
+              setState(() {});
             },
             child: Expanded(
                 child: Container(
