@@ -25,11 +25,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Row(
             children: [
-              m1GestureDetector(context),
+              m1GestureDetector(context,'male'),
               const SizedBox(
                 width: 50,
               ),
-              m1GestureDetector(context),
+              m1GestureDetector(context,'female'),
             ],
           ),
         ),
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  GestureDetector m1GestureDetector(BuildContext context) {
+  GestureDetector m1GestureDetector(BuildContext context, String type) {
     return GestureDetector(
       onTap: () {
         setState(() {
