@@ -40,9 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
   GestureDetector m1GestureDetector(BuildContext context, String type) {
     return GestureDetector(
       onTap: () {
-        setState(() {
-          isMale = true;
-        });
+        setState(() => isMale = (type == 'male')? true :false);
       },
       child: Expanded(
           child: Container(
@@ -53,9 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.male,
-            ),
+              Icon(type == 'male'? Icons.male : Icons.female,),
             const SizedBox(
               height: 15,
             ),
