@@ -23,14 +23,17 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Center(
-          child: Row(
-            children: [
-              m1GestureDetector(context, 'male'),
-              const SizedBox(
-                width: 50,
-              ),
-              m1GestureDetector(context, 'female'),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                m1GestureDetector(context, 'male'),
+                const SizedBox(
+                  width: 50,
+                ),
+                m1GestureDetector(context, 'female'),
+              ],
+            ),
           ),
         ),
       ),
