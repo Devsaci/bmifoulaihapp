@@ -39,9 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   GestureDetector m1GestureDetector(BuildContext context, String type) {
     return GestureDetector(
-      onTap: () {
-        setState(() => isMale = (type == 'male')? true :false);
-      },
+      onTap: () => setState(() => isMale = (type == 'male')? true :false),
       child: Expanded(
           child: Container(
         decoration: BoxDecoration(
