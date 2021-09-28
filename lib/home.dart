@@ -55,7 +55,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            TextButton(onPressed: () {}, child: const Text('Calculate'))
+            Container(
+                color: Colors.teal,
+                width: double.infinity,
+                child: TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Calculate',
+                      style: TextStyle(
+                        color: Colors.yellow,
+                        fontSize: 25,
+                      ),
+                    ))),
           ],
         ),
       ),
