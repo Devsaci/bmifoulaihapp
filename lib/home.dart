@@ -22,20 +22,40 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Expanded(
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                m1GestureDetector(context, 'male'),
-                const SizedBox(
-                  width: 50,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    m1GestureDetector(context, 'male'),
+                    const SizedBox(
+                      width: 50,
+                    ),
+                    m1GestureDetector(context, 'female'),
+                  ],
                 ),
-                m1GestureDetector(context, 'female'),
-              ],
+              ),
             ),
-          ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    m1GestureDetector(context, 'male'),
+                    const SizedBox(
+                      width: 50,
+                    ),
+                    m1GestureDetector(context, 'female'),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
