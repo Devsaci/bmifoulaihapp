@@ -107,6 +107,9 @@ class _MyHomePageState extends State<MyHomePage> {
               type == 'age' ? '$age' : '$weight',
               style: Theme.of(context).textTheme.headline2,
             ),
+            Row(
+              children: const <Widget>[],
+            ),
           ],
         ),
       ),
