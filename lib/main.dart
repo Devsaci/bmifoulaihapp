@@ -11,18 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        textTheme: const TextTheme(
-          headline2: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          textTheme: const TextTheme(
+            headline2: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+          iconTheme:
+              const IconThemeData(color: Colors.yellow, opacity: 1, size: 90),
+          canvasColor: Colors.black,
+          primarySwatch: Colors.teal,
         ),
-        iconTheme: const IconThemeData(color: Colors.yellow,opacity: 1,size: 90),
-        canvasColor: Colors.black,
-        primarySwatch: Colors.teal,
-      ),
-      home: const MyHomePage()
-    );
+        home: const MyHomePage());
   }
 }

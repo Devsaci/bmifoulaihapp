@@ -87,6 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
   Expanded m2Expanded(BuildContext context, String type) {
     return Expanded(
       child: Container(
@@ -108,5 +109,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
 }
