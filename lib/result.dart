@@ -10,16 +10,14 @@ class Result extends StatelessWidget {
 
   String get resultPhrase {
     String resultText = '';
-    //Conditions Parameters
     if (result >= 30)
-      resultText = 'Obese';
-    else if (result >= 30)
       resultText = 'Obese';
     else if (result > 25 && result < 30)
       resultText = 'Overweight';
+    else if (result >= 18.5 && result <= 24.9)
+      resultText = 'Normal';
     else
       resultText = 'Thin';
-
     return resultText;
   }
 
@@ -40,7 +38,7 @@ class Result extends StatelessWidget {
           children: <Widget>[
             Text("Gender :   ${isMale ? 'Male' : 'Female'}",
                 style: Theme.of(context).textTheme.headline1),
-            Text("Result :   ${result.toStringAsFixed(4)}",
+            Text("Result :   ${result.toStringAsFixed(1)}",
                 style: Theme.of(context).textTheme.headline1),
             Text(
               "Healhiness :   $resultPhrase",

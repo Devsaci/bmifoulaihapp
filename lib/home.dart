@@ -66,10 +66,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
 
                  var result = weight/pow(heightVal/100,2);
+                 print(result);
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) {
-                      return Result(result: 24.33, isMale: isMale, age: age);
+                      return Result(result: result, isMale: isMale, age: age);
                     }),
                   );
                 },
@@ -148,6 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   mini: true,
                 ),
+                const SizedBox(width: 10,),
                 FloatingActionButton(
                   backgroundColor: Colors.red,
                   heroTag: type == 'age' ? 'age++' : 'weight++',
