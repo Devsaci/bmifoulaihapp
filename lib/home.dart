@@ -60,7 +60,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height/10,
                 child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                    Navigator.push(context, route)
+
+                    },
                     child:  Text(
                       'Calculate',
                       style: Theme.of(context).textTheme.headline1,
