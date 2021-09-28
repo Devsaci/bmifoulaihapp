@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
                 color: Colors.teal,
                 width: double.infinity,
+                height: MediaQuery.of(context).size.height/10,
                 child: TextButton(
                     onPressed: () {},
                     child:  Text(
