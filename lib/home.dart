@@ -92,9 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: (isMale && type == 'male') || (!isMale && type == 'female')
-              ? Colors.teal
-              : Colors.blueGrey,
+          color: Colors.blueGrey,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
