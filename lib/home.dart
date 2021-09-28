@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 15),
             Text(
               type == 'age' ? '$age' : '$weight',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.headline1,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

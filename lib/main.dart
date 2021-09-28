@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           textTheme: const TextTheme(
+            headline1: TextStyle(
+                fontSize: 45, fontWeight: FontWeight.w800, color: Colors.white),
             headline2: TextStyle(
-                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           iconTheme: const IconThemeData(color: Colors.yellow, opacity: 1),
           canvasColor: Colors.black,
