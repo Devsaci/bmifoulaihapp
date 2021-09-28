@@ -108,10 +108,11 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline2,
             ),
             Row(
-              children:  <Widget>[
+              children: <Widget>[
                 FloatingActionButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   child: const Icon(Icons.add),
+                  mini: true,
                 ),
               ],
             ),
