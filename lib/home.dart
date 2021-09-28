@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:bmifoulaihapp/result.dart';
 import 'package:flutter/material.dart';
 
@@ -62,6 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
               height: MediaQuery.of(context).size.height / 10,
               child: TextButton(
                 onPressed: () {
+
+                 var result = weight/pow(heightVal/100,2);
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) {
