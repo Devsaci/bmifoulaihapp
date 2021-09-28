@@ -1,3 +1,4 @@
+import 'package:bmifoulaihapp/result.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -56,19 +57,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-                color: Colors.teal,
-                width: double.infinity,
-                height: MediaQuery.of(context).size.height/10,
-                child: TextButton(
-                    onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: builder))
-
-                    },
-                    child:  Text(
-                      'Calculate',
-                      style: Theme.of(context).textTheme.headline1,
-                    ),
+              color: Colors.teal,
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height / 10,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return Result(result: 24.33, isMale: isMale, age: age);
+                    }),
+                  );
+                },
+                child: Text(
+                  'Calculate',
+                  style: Theme.of(context).textTheme.headline1,
                 ),
+              ),
             ),
           ],
         ),
