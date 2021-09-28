@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
             headline2: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           ),
-          iconTheme:
-              const IconThemeData(color: Colors.yellow, opacity: 1),
+          iconTheme: const IconThemeData(color: Colors.yellow, opacity: 1),
           canvasColor: Colors.black,
           primarySwatch: Colors.teal,
         ),
