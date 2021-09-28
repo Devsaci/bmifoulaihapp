@@ -12,7 +12,7 @@ class _MyHomePageState extends State<MyHomePage> {
   double heightVal = 170;
 
   int weight = 55;
-  int age = 15;
+  int age = 18;
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const SizedBox(height: 15),
             Text(
-              type == 'male' ? 'Male' : 'Female',
+              type == 'age' ? '$age' : '$weight',
               style: Theme.of(context).textTheme.headline2,
             ),
           ],
