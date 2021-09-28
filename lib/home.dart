@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: MediaQuery.of(context).size.height/10,
                 child: TextButton(
                     onPressed: () {
-                    Navigator.push(context, route)
+                    Navigator.push(context, MaterialPageRoute(builder: builder))
 
                     },
                     child:  Text(
