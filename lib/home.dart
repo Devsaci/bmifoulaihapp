@@ -109,7 +109,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(
               children: const <Widget>[
-                FloatingActionButton(onPressed: (),child: ,)
+                FloatingActionButton(
+                  onPressed: null,
+                  child: Icon(Icons.add),
+                ),
               ],
             ),
           ],
