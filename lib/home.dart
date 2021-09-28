@@ -87,15 +87,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
-  GestureDetector m2GestureDetector(BuildContext context, String type) {
-    return GestureDetector(
-      onTap: () => setState(() => isMale = (type == 'male') ? true : false),
-      child: Expanded(
-          child: Container(
-        padding: const EdgeInsets.all(15),
+  Expanded m2GestureDetector(BuildContext context, String type) {
+    return Expanded(
+      child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
           color: (isMale && type == 'male') || (!isMale && type == 'female')
               ? Colors.teal
               : Colors.blueGrey,
@@ -103,19 +99,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              type == 'male' ? Icons.male : Icons.female,
-            ),
-            const SizedBox(
-              height: 15,
-            ),
+            Icon(type == 'male' ? Icons.male : Icons.female, size: 90),
+            const SizedBox(height: 15),
             Text(
-              type == 'male' ? 'MALE' : 'FEMALE',
+              type == 'male' ? 'Male' : 'Female',
               style: Theme.of(context).textTheme.headline2,
-            )
+            ),
           ],
         ),
-      )),
+      ),
     );
   }
+
 }
