@@ -46,11 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    m2Expanded(context, 'male'),
+                    m2Expanded(context, 'weight'),
                     const SizedBox(
                       width: 50,
                     ),
-                    m2Expanded(context, 'female'),
+                    m2Expanded(context, 'age'),
                   ],
                 ),
               ),
@@ -98,7 +98,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(type == 'male' ? Icons.male : Icons.female, size: 90),
+            Text(
+              type == 'age' ? 'AGE' : 'WEIGHT',
+              style: Theme.of(context).textTheme.headline2,
+            ),
             const SizedBox(height: 15),
             Text(
               type == 'male' ? 'Male' : 'Female',
