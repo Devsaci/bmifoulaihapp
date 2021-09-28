@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(type == 'male' ? Icons.male : Icons.female, size: 90),
+              Icon(type == 'male' ? Icons.male : Icons.female, size: 70),
               const SizedBox(height: 15),
               Text(
                 type == 'male' ? 'Male' : 'Female',

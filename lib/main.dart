@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           iconTheme:
-              const IconThemeData(color: Colors.yellow, opacity: 1, size: 90),
+              const IconThemeData(color: Colors.yellow, opacity: 1),
           canvasColor: Colors.black,
           primarySwatch: Colors.teal,
         ),
