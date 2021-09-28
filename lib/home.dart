@@ -110,6 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               children: <Widget>[
                 FloatingActionButton(
+                  heroTag: 'age',
                   onPressed: () {},
                   child: const Icon(Icons.add),
                   mini: true,
