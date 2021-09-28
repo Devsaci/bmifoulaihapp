@@ -31,11 +31,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    m1GestureDetector(context, 'male'),
+                    m1Expanded(context, 'male'),
                     const SizedBox(
                       width: 50,
                     ),
-                    m1GestureDetector(context, 'female'),
+                    m1Expanded(context, 'female'),
                   ],
                 ),
               ),
@@ -46,11 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    m2GestureDetector(context, 'male'),
+                    m2Expanded(context, 'male'),
                     const SizedBox(
                       width: 50,
                     ),
-                    m2GestureDetector(context, 'female'),
+                    m2Expanded(context, 'female'),
                   ],
                 ),
               ),
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Expanded m1GestureDetector(BuildContext context, String type) {
+  Expanded m1Expanded(BuildContext context, String type) {
     return Expanded(
       child: GestureDetector(
         onTap: () => setState(() => isMale = (type == 'male') ? true : false),
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-  Expanded m2GestureDetector(BuildContext context, String type) {
+  Expanded m2Expanded(BuildContext context, String type) {
     return Expanded(
       child: Container(
         decoration: BoxDecoration(
