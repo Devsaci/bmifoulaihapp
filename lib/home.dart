@@ -57,14 +57,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         Text("170"),
                         Text("cm"),
                       ]),
-                      Slider( value: _duelCommandment.toDouble(),
+                      Slider( value: heightVal,
                         min: 1.0,
-                        max: 10.0,
+                        max: 200.0,
                         divisions: 10,
-                        label: '$_duelCommandment',
+                        label: '$heightVal',
                         onChanged: (double newValue) {
                           setState(() {
-                            _duelCommandment = newValue.round();
+                            heightVal = newValue;
                           });
                         },)
                     ],
