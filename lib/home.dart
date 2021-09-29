@@ -52,12 +52,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.tealAccent,
                   child: Column(
                     children: [
-                       Text("Height", style: Theme.of(context).textTheme.headline2,),
-                      Row(children: <Widget>[
-                        Text("170", style: Theme.of(context).textTheme.headline2),
-                        Text("cm", style: Theme.of(context).textTheme.headline2),
-                      ]),
-                      Slider( value: heightVal,
+                      Text(
+                        "Height",
+                        style: Theme.of(context).textTheme.headline2,
+                      ),
+                      Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Text("170",
+                                style: Theme.of(context).textTheme.headline2),
+                            const SizedBox(height: 40,),
+                            Text("cm",
+                                style: Theme.of(context).textTheme.headline2),
+                          ]),
+                      Slider(
+                        value: heightVal,
                         min: 1.0,
                         max: 200.0,
                         divisions: 10,
@@ -66,7 +75,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           setState(() {
                             heightVal = newValue;
                           });
-                        },)
+                        },
+                      )
                     ],
                   ),
                 ),
