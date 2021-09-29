@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   color: Colors.white38,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Height",
