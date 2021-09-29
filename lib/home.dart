@@ -52,9 +52,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.tealAccent,
                   child: Column(
                     children: [
-                      Text("data"),
-                      Row(),
-                      Slider(value: value, onChanged: onChanged)
+                      Text("Height"),
+                      Row(children:<Widget>[
+                        Text("170"),
+                        Text("cm"),
+                      ]),
+                      Slider( value: _duelCommandment.toDouble(),
+                        min: 1.0,
+                        max: 10.0,
+                        divisions: 10,
+                        label: '$_duelCommandment',
+                        onChanged: (double newValue) {
+                          setState(() {
+                            _duelCommandment = newValue.round();
+                          });
+                        },)
                     ],
                   ),
                 ),
