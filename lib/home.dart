@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             const SizedBox(
                               width: 20,
                             ),
-                            Text("cm",
+                            Text("CM",
                                 style: Theme.of(context).textTheme.bodyText1),
                           ]),
                       Slider(
