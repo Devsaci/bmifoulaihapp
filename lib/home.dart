@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         min: 1.0,
                         max: 300.0,
                         divisions: 10,
-                        label: '$heightVal',
+                        label: '${heightVal.round()}',
                         onChanged: (double newValue) {
                           setState(() {
                             heightVal = newValue;
