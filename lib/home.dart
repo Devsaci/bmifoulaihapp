@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text('$heightVal',
+                            Text(heightVal.toStringAsFixed(1),
                                 style: Theme.of(context).textTheme.headline1),
                             const SizedBox(width: 20,),
                             Text("cm",
