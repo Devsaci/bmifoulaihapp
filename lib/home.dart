@@ -44,12 +44,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            //Expanded Heiher
+            //Expanded Heighter
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Container(
-                  color: Colors.white38,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.teal),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
