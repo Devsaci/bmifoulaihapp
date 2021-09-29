@@ -51,7 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   color: Colors.tealAccent,
                   child: Column(
-                    children: [],
+                    children: [
+                      Text("data"),
+                      Row(),
+                      Slider(value: value, onChanged: onChanged)
+                    ],
                   ),
                 ),
               ),
