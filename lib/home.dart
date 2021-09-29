@@ -49,31 +49,25 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.teal,
-                      borderRadius: BorderRadius.circular(30)),
+                  color: Colors.white38,
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Height",
                         style: Theme.of(context).textTheme.headline2,
-                      ),
-                      const SizedBox(
-                        height: 20,
                       ),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Text('$heightVal',
                                 style: Theme.of(context).textTheme.headline1),
-                            const SizedBox(
-                              width: 20,
-                            ),
+                            const SizedBox(width: 20,),
                             Text("cm",
                                 style: Theme.of(context).textTheme.bodyText1),
                           ]),
                       Slider(
+                        activeColor: Colors.red,
+                        thumbColor: Colors.yellow,
                         value: heightVal,
                         min: 1.0,
                         max: 300.0,
