@@ -52,10 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.tealAccent,
                   child: Column(
                     children: [
-                      Text("Height"),
-                      Row(children:<Widget>[
-                        Text("170"),
-                        Text("cm"),
+                       Text("Height", style: Theme.of(context).textTheme.headline2,),
+                      Row(children: <Widget>[
+                        Text("170", style: Theme.of(context).textTheme.headline2),
+                        Text("cm", style: Theme.of(context).textTheme.headline2),
                       ]),
                       Slider( value: heightVal,
                         min: 1.0,
