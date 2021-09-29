@@ -50,6 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Container(
                   color: Colors.tealAccent,
+                  child: Column(
+                    children: [],
+                  ),
                 ),
               ),
             ),
