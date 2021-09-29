@@ -12,7 +12,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool isMale = true;
-  double heightVal = 170;
+  double heightVal = 180;
 
   int weight = 55;
   int age = 18;
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("170",
+                            Text('$heightVal',
                                 style: Theme.of(context).textTheme.headline2),
                             const SizedBox(height: 40,),
                             Text("cm",
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Slider(
                         value: heightVal,
                         min: 1.0,
-                        max: 200.0,
+                        max: 300.0,
                         divisions: 10,
                         label: '$heightVal',
                         onChanged: (double newValue) {
