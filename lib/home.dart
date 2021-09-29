@@ -72,12 +72,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           ]),
                       Slider(
                         activeColor: Colors.red,
+                        inactiveColor: Colors.blue,
                         thumbColor: Colors.yellow,
                         value: heightVal,
                         min: 1.0,
                         max: 300.0,
                         divisions: 100,
-                        label: '${heightVal.round()}',
+                        // label: '${heightVal.round()}',
                         onChanged: (double newValue) {
                           setState(() {
                             heightVal = newValue;
