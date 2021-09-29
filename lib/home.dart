@@ -28,6 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //Expanded Male /Female
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -43,6 +44,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            //Expanded Heiher
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Container(
+                  color: Colors.tealAccent,
+                ),
+              ),
+            ),
+            //Expanded WEIGHT /AGE
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -58,15 +69,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            //Button Calculet
             Container(
               color: Colors.teal,
               width: double.infinity,
               height: MediaQuery.of(context).size.height / 10,
               child: TextButton(
                 onPressed: () {
-
-                 var result = weight/pow(heightVal/100,2);
-                 print(result);
+                  var result = weight / pow(heightVal / 100, 2);
+                  print(result);
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) {
@@ -149,7 +160,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   mini: true,
                 ),
-                const SizedBox(width: 10,),
+                const SizedBox(
+                  width: 10,
+                ),
                 FloatingActionButton(
                   backgroundColor: Colors.red,
                   heroTag: type == 'age' ? 'age++' : 'weight++',
